@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://biapcb7tkpwyw"]
+
+[ext_resource type="Texture2D" uid="uid://yr188ksyp8h4" path="res://Player ship/Player_Ship_P4.png" id="1_vtcyc"]
+
+[node name="UILife_P4" type="TextureRect"]
+offset_left = -10.0
+offset_top = 49.0
+offset_right = 30.0
+offset_bottom = 89.0
+texture = ExtResource("1_vtcyc")
+expand_mode = 2

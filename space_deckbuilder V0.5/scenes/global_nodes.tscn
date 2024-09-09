@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://bujj6d23x5hxj"]
+
+[node name="GlobalNodes" type="Node"]
+
+[node name="ShieldP1" type="Timer" parent="."]
+process_callback = 0
+one_shot = true
+
+[node name="ShieldCooldownP1" type="Timer" parent="."]
+process_callback = 0
+one_shot = true

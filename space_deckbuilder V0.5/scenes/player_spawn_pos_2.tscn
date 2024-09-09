@@ -1,0 +1,4 @@
+[gd_scene format=3 uid="uid://dkb72kwwxx07"]
+
+[node name="PlayerSpawnPos2" type="Node2D"]
+position = Vector2(660, 360)

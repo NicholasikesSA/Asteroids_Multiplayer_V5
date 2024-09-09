@@ -1,0 +1,74 @@
+[gd_scene load_steps=4 format=3 uid="uid://cybuphf55tsg7"]
+
+[ext_resource type="Script" path="res://scripts/hud.gd" id="1_wagl5"]
+[ext_resource type="FontFile" uid="uid://dxt28pkkbmnru" path="res://Mini Pixel Pack 3/UI objects/pokemon_fire_red.ttf" id="2_dt8gm"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_gs0jn"]
+font = ExtResource("2_dt8gm")
+font_size = 48
+
+[node name="HUD" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_wagl5")
+
+[node name="Score1" type="Label" parent="."]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 5.0
+offset_right = 289.0
+offset_bottom = 47.0
+text = "SCORE = 99999"
+label_settings = SubResource("LabelSettings_gs0jn")
+
+[node name="Score2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 991.0
+offset_top = 5.0
+offset_right = 1268.0
+offset_bottom = 47.0
+text = "99999 = SCORE"
+label_settings = SubResource("LabelSettings_gs0jn")
+horizontal_alignment = 2
+
+[node name="Game_Timer" type="Label" parent="."]
+layout_mode = 0
+offset_left = 500.0
+offset_top = 11.0
+offset_right = 780.0
+offset_bottom = 53.0
+text = "Time: 00:00"
+label_settings = SubResource("LabelSettings_gs0jn")
+horizontal_alignment = 1
+autowrap_mode = 1
+
+[node name="Lives_P1" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_top = 49.0
+offset_right = 73.0
+offset_bottom = 65.0
+scale = Vector2(3, 3)
+
+[node name="Lives_P2" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 1061.0
+offset_top = 49.0
+offset_right = 1134.0
+offset_bottom = 65.0
+scale = Vector2(3, 3)
+alignment = 2
+
+[node name="P1_Shield_Bar" type="ProgressBar" parent="."]
+layout_mode = 0
+offset_top = 693.0
+offset_right = 108.0
+offset_bottom = 720.0
+step = 0.0
+show_percentage = false
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="P1_Shield_Bar"]
+layout_mode = 0
+offset_right = 113.0
+offset_bottom = 27.0

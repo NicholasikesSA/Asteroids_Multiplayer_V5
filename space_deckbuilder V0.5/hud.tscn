@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://cwur4mvk2o5m2"]
+
+[ext_resource type="Script" path="res://scripts/hud.gd" id="1_wagl5"]
+[ext_resource type="FontFile" uid="uid://dxt28pkkbmnru" path="res://Mini Pixel Pack 3/UI objects/pokemon_fire_red.ttf" id="2_dt8gm"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_gs0jn"]
+font = ExtResource("2_dt8gm")
+font_size = 48
+
+[node name="HUD" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_wagl5")
+
+[node name="Score" type="Label" parent="."]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 5.0
+offset_right = 289.0
+offset_bottom = 47.0
+text = "Score = 99999"
+label_settings = SubResource("LabelSettings_gs0jn")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_top = 49.0
+offset_right = 73.0
+offset_bottom = 65.0
+scale = Vector2(3, 3)
+alignment = 1

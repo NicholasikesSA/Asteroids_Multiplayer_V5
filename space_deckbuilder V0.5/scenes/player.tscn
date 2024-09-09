@@ -1,0 +1,101 @@
+[gd_scene load_steps=14 format=3 uid="uid://bxvqu3wutpwn2"]
+
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_ou2k6"]
+[ext_resource type="Texture2D" uid="uid://bkgesapc0wqns" path="res://Player ship/Player_Ship_P1.png" id="2_mwjvy"]
+[ext_resource type="Texture2D" uid="uid://bxkrm5nalrl86" path="res://Player ship/AnimatedFlame.png" id="3_ihlgb"]
+[ext_resource type="Texture2D" uid="uid://cvupmil46yq1l" path="res://Player ship/shield.png" id="4_fr6x1"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_e0gh1"]
+radius = 24.0
+height = 120.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5jke6"]
+atlas = ExtResource("3_ihlgb")
+region = Rect2(0, 0, 29, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_36q8s"]
+atlas = ExtResource("3_ihlgb")
+region = Rect2(29, 0, 29, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n46lf"]
+atlas = ExtResource("3_ihlgb")
+region = Rect2(0, 30, 29, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ep1lq"]
+atlas = ExtResource("3_ihlgb")
+region = Rect2(29, 30, 29, 30)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_c47kg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5jke6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_36q8s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n46lf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ep1lq")
+}],
+"loop": true,
+"name": &"thrust",
+"speed": 10.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r2mbp"]
+atlas = ExtResource("4_fr6x1")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qqdsk"]
+atlas = ExtResource("4_fr6x1")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1uu6c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r2mbp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qqdsk")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}]
+
+[node name="player" type="CharacterBody2D"]
+scale = Vector2(0.25, 0.25)
+collision_layer = 3
+collision_mask = 5
+script = ExtResource("1_ou2k6")
+
+[node name="Ship" type="Sprite2D" parent="."]
+texture = ExtResource("2_mwjvy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(0, -15)
+shape = SubResource("CapsuleShape2D_e0gh1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, 68)
+scale = Vector2(1.10345, 1.34992)
+sprite_frames = SubResource("SpriteFrames_c47kg")
+animation = &"thrust"
+autoplay = "thrust"
+frame_progress = 0.13153
+
+[node name="Muzzle" type="Node2D" parent="."]
+position = Vector2(0, -86)
+
+[node name="Shield" type="AnimatedSprite2D" parent="."]
+visible = false
+modulate = Color(1, 1, 1, 0.6)
+position = Vector2(0, 4.76837e-07)
+scale = Vector2(7, 7)
+sprite_frames = SubResource("SpriteFrames_1uu6c")
+frame_progress = 0.624714

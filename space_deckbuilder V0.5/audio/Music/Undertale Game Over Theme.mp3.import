@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://djashkhnsa7oi"
+path="res://.godot/imported/Undertale Game Over Theme.mp3-79d590549706e730174c13c0404e8766.mp3str"
+
+[deps]
+
+source_file="res://audio/Music/Undertale Game Over Theme.mp3"
+dest_files=["res://.godot/imported/Undertale Game Over Theme.mp3-79d590549706e730174c13c0404e8766.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

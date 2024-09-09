@@ -1,0 +1,88 @@
+[gd_scene load_steps=13 format=3 uid="uid://c17c5i4htc5e1"]
+
+[ext_resource type="Script" path="res://scenes/top_alien.gd" id="1_102tv"]
+[ext_resource type="Texture2D" uid="uid://cwjshe7k5byvg" path="res://Mini Pixel Pack 3/Enemies/Alien1.png" id="2_tf2kf"]
+[ext_resource type="AudioStream" uid="uid://ctktv6colb2hc" path="res://audio/Sound_Effects/saucerBig.wav" id="3_bctv1"]
+[ext_resource type="AudioStream" uid="uid://bv71c088nsli6" path="res://audio/Sound_Effects/saucerSmall.mp3" id="4_oyueo"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jsg15"]
+atlas = ExtResource("2_tf2kf")
+region = Rect2(0, 0, 975, 706)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7wplg"]
+atlas = ExtResource("2_tf2kf")
+region = Rect2(975, 0, 975, 706)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7hqhl"]
+atlas = ExtResource("2_tf2kf")
+region = Rect2(0, 706, 975, 706)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5y1mh"]
+atlas = ExtResource("2_tf2kf")
+region = Rect2(975, 706, 975, 706)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i8epo"]
+atlas = ExtResource("2_tf2kf")
+region = Rect2(0, 1412, 975, 706)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_66r65"]
+atlas = ExtResource("2_tf2kf")
+region = Rect2(975, 1412, 975, 706)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x5blt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jsg15")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7wplg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7hqhl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5y1mh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i8epo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_66r65")
+}],
+"loop": true,
+"name": &"Flight",
+"speed": 2.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nwyhq"]
+radius = 19.0263
+
+[node name="Alien_1" type="Area2D"]
+collision_layer = 4
+collision_mask = 10
+script = ExtResource("1_102tv")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.05, 0.05)
+sprite_frames = SubResource("SpriteFrames_x5blt")
+animation = &"Flight"
+autoplay = "Flight"
+frame_progress = 0.110792
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource("CircleShape2D_nwyhq")
+
+[node name="AlienTop1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_bctv1")
+volume_db = -20.0
+mix_target = 1
+
+[node name="AlienTop2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_oyueo")
+volume_db = -20.0
+mix_target = 1
+
+[connection signal="finished" from="AlienTop1" to="." method="_on_alien_top_1_finished"]
+[connection signal="finished" from="AlienTop2" to="." method="_on_alien_top_2_finished"]

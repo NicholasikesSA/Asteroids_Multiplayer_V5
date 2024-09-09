@@ -1,0 +1,191 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1725569330
+hud.tscn::PackedScene::6359368122616497099::315558000::0::1::::<><>::res://scripts/hud.gd<>uid://dxt28pkkbmnru::::res://Mini Pixel Pack 3/UI objects/pokemon_fire_red.ttf
+icon.svg::CompressedTexture2D::5838087925447111224::315558000::1725394254::1::::<><>::
+split_screen.gd::GDScript::-1::315558000::0::1::::<>Node<>::
+::res://addons/::1725394203
+::res://addons/multiplayer_input/::1725394203
+device_input.gd::GDScript::-1::315558000::0::1::::DeviceInput<>RefCounted<>::
+multiplayer_input.gd::GDScript::-1::315558000::0::1::::<>Node<>::
+plugin.cfg::TextFile::-1::315558000::0::1::::<><>::
+plugin.gd::GDScript::-1::315558000::0::1::::<>EditorPlugin<>::
+::res://audio/::1725394203
+::res://audio/Music/::1725394254
+MoveAlong.mp3::AudioStreamMP3::6111030691735737689::315558000::1725394254::1::::<><>::
+Undertale Game Over Theme.mp3::AudioStreamMP3::7792067586910609636::315558000::1725394254::1::::<><>::
+::res://audio/Sound_Effects/::1725394256
+8-bit-explosion-95847.mp3::AudioStreamMP3::5957050177242855227::315558000::1725394254::1::::<><>::
+8-bit-laser-151672.mp3::AudioStreamMP3::4969153351298740881::315558000::1725394254::1::::<><>::
+enemy1_death.mp3::AudioStreamMP3::5154404792153231168::315558000::1725394254::1::::<><>::
+enemy_spawn1.mp3::AudioStreamMP3::6902390111216579659::315558000::1725394254::1::::<><>::
+Player_Explosion.mp3::AudioStreamMP3::726217596355133732::315558000::1725394254::1::::<><>::
+saucerBig.mp3::AudioStreamMP3::8558886759381362267::315558000::1725394254::1::::<><>::
+saucerBig.wav::AudioStreamWAV::6128265930548310484::315558000::1725394256::1::::<><>::
+saucerSmall.mp3::AudioStreamMP3::3928030067201192987::315558000::1725394254::1::::<><>::
+saucerSmall.wav::AudioStreamWAV::3983924476382642598::315558000::1725394256::1::::<><>::
+::res://Mini Pixel Pack 3/::1725394254
+LICENSE.txt::TextFile::-1::315558000::0::1::::<><>::
+space.jpg::CompressedTexture2D::8601629424532983605::315558000::1725394254::1::::<><>::
+Space_BG (2 frames) (64 x 64).png::CompressedTexture2D::7690658440788596074::315558000::1725394254::1::::<><>::
+::res://Mini Pixel Pack 3/Backgrounds/::1725394254
+Space_BG (2 frames) (64 x 64).png::CompressedTexture2D::8704095157845836953::315558000::1725394254::1::::<><>::
+::res://Mini Pixel Pack 3/Backgrounds/Aseprite/::1725394204
+::res://Mini Pixel Pack 3/Backgrounds/PNGs/::1725394204
+::res://Mini Pixel Pack 3/Backgrounds/PNGs/Condesed/::1725394256
+Starry background  - Layer 01 - Void.png::CompressedTexture2D::949773067551984015::315558000::1725394256::1::::<><>::
+Starry background  - Layer 02 - Stars.png::CompressedTexture2D::8610202188366853812::315558000::1725394255::1::::<><>::
+Starry background  - Layer 03 - Stars.png::CompressedTexture2D::5433488756159371919::315558000::1725394256::1::::<><>::
+::res://Mini Pixel Pack 3/Backgrounds/PNGs/Split up/::1725394255
+Starry background  - Layer 01 - Solid colour.png::CompressedTexture2D::5833465002431388175::315558000::1725394255::1::::<><>::
+Starry background  - Layer 02 - Shadows 2.png::CompressedTexture2D::6834103450143111778::315558000::1725394255::1::::<><>::
+Starry background  - Layer 02 - Shadows.png::CompressedTexture2D::3532205098277570265::315558000::1725394255::1::::<><>::
+Starry background  - Layer 03 - Stars 2.png::CompressedTexture2D::2921534846479529714::315558000::1725394255::1::::<><>::
+Starry background  - Layer 03 - Stars.png::CompressedTexture2D::1323102538484817785::315558000::1725394255::1::::<><>::
+Starry background - Layer X - Big Star 2.png::CompressedTexture2D::138647692601707443::315558000::1725394255::1::::<><>::
+Starry background - Layer X - Big Star.png::CompressedTexture2D::743309629260484758::315558000::1725394255::1::::<><>::
+Starry background - Layer X -Black hole.png::CompressedTexture2D::5984490248388068387::315558000::1725394255::1::::<><>::
+Starry background - Layer X -Rotary Star 2.png::CompressedTexture2D::7768276635649237426::315558000::1725394255::1::::<><>::
+Starry background - Layer X -Rotary Star.png::CompressedTexture2D::2263724084107724500::315558000::1725394255::1::::<><>::
+::res://Mini Pixel Pack 3/Effects/::1725394254
+Explosion (16 x 16).png::CompressedTexture2D::5615240292035008546::315558000::1725394254::1::::<><>::
+Sparkle (16 x 16).png::CompressedTexture2D::7246567798527513167::315558000::1725394254::1::::<><>::
+::res://Mini Pixel Pack 3/Enemies/::1725394255
+Alan (16 x 16).png::CompressedTexture2D::507140460008653393::315558000::1725394254::1::::<><>::
+Alien1.png::CompressedTexture2D::6336680993658237144::315558000::1725394255::1::::<><>::
+alien_ship.jpg::CompressedTexture2D::7838544331292489733::315558000::1725394254::1::::<><>::
+Bon_Bon (16 x 16).png::CompressedTexture2D::2175376523668954236::315558000::1725394254::1::::<><>::
+enemyBlack1.png::CompressedTexture2D::7275623962168064494::315558000::1725394254::1::::<><>::
+enemyBlack2.png::CompressedTexture2D::4377948454909341024::315558000::1725394254::1::::<><>::
+enemyBlack3.png::CompressedTexture2D::3200646654740350911::315558000::1725394254::1::::<><>::
+enemyBlack4.png::CompressedTexture2D::2708949371007704126::315558000::1725394254::1::::<><>::
+enemyBlack5.png::CompressedTexture2D::4232081850246271362::315558000::1725394254::1::::<><>::
+enemyBlue1.png::CompressedTexture2D::2373497635270639521::315558000::1725394254::1::::<><>::
+enemyBlue2.png::CompressedTexture2D::9054148074624593016::315558000::1725394255::1::::<><>::
+enemyBlue3.png::CompressedTexture2D::5980413044079747292::315558000::1725394255::1::::<><>::
+enemyBlue4.png::CompressedTexture2D::8803329900374562182::315558000::1725394255::1::::<><>::
+enemyBlue5.png::CompressedTexture2D::2202612627950440861::315558000::1725394255::1::::<><>::
+enemyGreen1.png::CompressedTexture2D::2817086750618269619::315558000::1725394255::1::::<><>::
+enemyGreen2.png::CompressedTexture2D::3246357276927898178::315558000::1725394255::1::::<><>::
+enemyGreen3.png::CompressedTexture2D::2103860978092676059::315558000::1725394255::1::::<><>::
+enemyGreen4.png::CompressedTexture2D::8566002470865635766::315558000::1725394255::1::::<><>::
+enemyGreen5.png::CompressedTexture2D::5490554519975539683::315558000::1725394255::1::::<><>::
+enemyRed1.png::CompressedTexture2D::2509846296983904293::315558000::1725394255::1::::<><>::
+enemyRed2.png::CompressedTexture2D::7658230218164886736::315558000::1725394255::1::::<><>::
+enemyRed3.png::CompressedTexture2D::7187154100189435999::315558000::1725394255::1::::<><>::
+enemyRed4.png::CompressedTexture2D::8464492489300402819::315558000::1725394255::1::::<><>::
+enemyRed5.png::CompressedTexture2D::8020167140801898325::315558000::1725394255::1::::<><>::
+Enemy_.png::CompressedTexture2D::6311045819028787153::315558000::1725394255::1::::<><>::
+Lips (16 x 16).png::CompressedTexture2D::7205741422907000409::315558000::1725394255::1::::<><>::
+::res://Mini Pixel Pack 3/Items/::1725394255
+Circle_+_Square_+_Missile_pick-ups (16 x 16).png::CompressedTexture2D::4887889672999077803::315558000::1725394255::1::::<><>::
+Power_item (16 x 16).png::CompressedTexture2D::8069430975310519180::315558000::1725394255::1::::<><>::
+::res://Mini Pixel Pack 3/Meteors/::1725394255
+meteorBrown_big2.png::CompressedTexture2D::2849500276523407164::315558000::1725394255::1::::<><>::
+meteorBrown_big3.png::CompressedTexture2D::1848477164873899778::315558000::1725394255::1::::<><>::
+meteorBrown_big4.png::CompressedTexture2D::6717952610646063502::315558000::1725394255::1::::<><>::
+meteorBrown_med3.png::CompressedTexture2D::4894870667432062010::315558000::1725394255::1::::<><>::
+meteorBrown_small2.png::CompressedTexture2D::2635627120022443185::315558000::1725394255::1::::<><>::
+meteorBrown_tiny1.png::CompressedTexture2D::9074031055461201435::315558000::1725394255::1::::<><>::
+meteorBrown_tiny2.png::CompressedTexture2D::3532020578714082682::315558000::1725394255::1::::<><>::
+meteorGrey_big1.png::CompressedTexture2D::1488347432361918163::315558000::1725394255::1::::<><>::
+meteorGrey_big2.png::CompressedTexture2D::8606461768976560944::315558000::1725394254::1::::<><>::
+meteorGrey_big3.png::CompressedTexture2D::3040043945472663175::315558000::1725394254::1::::<><>::
+meteorGrey_big4.png::CompressedTexture2D::2881983844781174216::315558000::1725394254::1::::<><>::
+meteorGrey_med1.png::CompressedTexture2D::3844377258854900718::315558000::1725394254::1::::<><>::
+meteorGrey_med2.png::CompressedTexture2D::1968105573734199288::315558000::1725394254::1::::<><>::
+meteorGrey_small1.png::CompressedTexture2D::8225490466298249460::315558000::1725394254::1::::<><>::
+meteorGrey_small2.png::CompressedTexture2D::8832289742006887423::315558000::1725394254::1::::<><>::
+meteorGrey_tiny1.png::CompressedTexture2D::687802982447526005::315558000::1725394254::1::::<><>::
+meteorGrey_tiny2.png::CompressedTexture2D::6554668323161120053::315558000::1725394254::1::::<><>::
+::res://Mini Pixel Pack 3/Planets/::1725394204
+::res://Mini Pixel Pack 3/Planets/Aseprite/::1725394204
+::res://Mini Pixel Pack 3/Planets/PNGs/::1725394254
+Earth-Like planet - Without back glow.png::CompressedTexture2D::353407497482138415::315558000::1725394254::1::::<><>::
+Earth-Like planet.png::CompressedTexture2D::6248966749914823522::315558000::1725394254::1::::<><>::
+::res://Mini Pixel Pack 3/Projectiles/::1725394254
+Enemy_projectile (16 x 16).png::CompressedTexture2D::6895707212907618485::315558000::1725394254::1::::<><>::
+Player_beam (16 x 16).png::CompressedTexture2D::6651113254538800598::315558000::1725394254::1::::<><>::
+Player_charged_beam1 (16 x 16).png::CompressedTexture2D::6842577552326066569::315558000::1725394254::1::::<><>::
+Player_charged_beam2 (16 x 16).png::CompressedTexture2D::1977826412510555951::315558000::1725394254::1::::<><>::
+Player_charged_beam3 (16 x 16).png::CompressedTexture2D::1100959001974968544::315558000::1725394254::1::::<><>::
+Player_charged_beam4(16 x 16).png::CompressedTexture2D::294308193281667453::315558000::1725394254::1::::<><>::
+Player_charged_donut_shot (16 x 16).png::CompressedTexture2D::6261029963713972535::315558000::1725394254::1::::<><>::
+Player_charged_square_shot (16 x 16).png::CompressedTexture2D::5277529474327336791::315558000::1725394254::1::::<><>::
+Player_donut_shot (16 x 16).png::CompressedTexture2D::3803733891447871053::315558000::1725394254::1::::<><>::
+Player_missile_shots1 (16 x 16).png::CompressedTexture2D::7511648133249037180::315558000::1725394254::1::::<><>::
+Player_missile_shots2(16 x 16).png::CompressedTexture2D::4878847690153608714::315558000::1725394254::1::::<><>::
+Player_missile_shots3(16 x 16).png::CompressedTexture2D::6100812278740958857::315558000::1725394254::1::::<><>::
+Player_missile_shots4(16 x 16).png::CompressedTexture2D::5134951321647252341::315558000::1725394254::1::::<><>::
+Player_square_shot (16 x 16).png::CompressedTexture2D::8927444532123675480::315558000::1725394254::1::::<><>::
+::res://Mini Pixel Pack 3/UI objects/::1725394254
+GAME_OVER (72 x 8).png::CompressedTexture2D::6412851451056576946::315558000::1725394254::1::::<><>::
+GAME_OVER.jpg::CompressedTexture2D::2678540748500948742::315558000::1725394254::1::::<><>::
+Item_held_box (16 x 16).png::CompressedTexture2D::3827477515368468180::315558000::1725394254::1::::<><>::
+Number_font (8 x 8).png::CompressedTexture2D::352546938764685749::315558000::1725394254::1::::<><>::
+Player_life_icon (16 x 16)_P1.png::CompressedTexture2D::694029461275272668::315558000::1725394254::1::::<><>::
+Player_life_icon (16 x 16)_P2.png::CompressedTexture2D::714326523854923800::315558000::1725394254::1::::<><>::
+Player_life_icon (16 x 16)_P3.png::CompressedTexture2D::1051696567274559825::315558000::1725394254::1::::<><>::
+Player_life_icon (16 x 16)_P4.png::CompressedTexture2D::2286420373756918482::315558000::1725394254::1::::<><>::
+pokemon_fire_red.ttf::FontFile::8814527725839214010::315558000::1725394254::1::::<><>::
+Power_+_charge_bars (full + empty) (32 x 16).png::CompressedTexture2D::2591698013692254050::315558000::1725394254::1::::<><>::
+START (48 x 8).png::CompressedTexture2D::8790665088044705402::315558000::1725394254::1::::<><>::
+Undertale_Game Over.png::CompressedTexture2D::3690346615345963757::315558000::1725394254::1::::<><>::
+::res://Player ship/::1725394254
+AnimatedFlame.png::CompressedTexture2D::4022463079110675749::315558000::1725394254::1::::<><>::
+Boosters (16 x 16).png::CompressedTexture2D::8894506263431708829::315558000::1725394254::1::::<><>::
+Boosters_left (16 x 16).png::CompressedTexture2D::6345483512822790872::315558000::1725394254::1::::<><>::
+Boosters_right (16 x 16).png::CompressedTexture2D::468988977570457639::315558000::1725394254::1::::<><>::
+Player_Ship_Origional.webp::CompressedTexture2D::4263045842095306293::315558000::1725394254::1::::<><>::
+Player_Ship_P1.png::CompressedTexture2D::3100970422156366668::315558000::1725394254::1::::<><>::
+Player_Ship_P2 - Copy.png::CompressedTexture2D::495377526520000690::315558000::1725394254::1::::<><>::
+Player_Ship_P2.png::CompressedTexture2D::6246523644819703312::315558000::1725394254::1::::<><>::
+Player_Ship_P3.png::CompressedTexture2D::9109187334573428689::315558000::1725394254::1::::<><>::
+Player_Ship_P4.png::CompressedTexture2D::1721265991711719623::315558000::1725394254::1::::<><>::
+shield.png::CompressedTexture2D::6289027261824099535::315558000::1725394254::1::::<><>::
+::res://resources/::1725394254
+asteroid_big_collision.tres::CircleShape2D::6403769820761641858::315558000::0::1::::<><>::
+asteroid_med_collision.tres::CircleShape2D::1595250388613428368::315558000::0::1::::<><>::
+asteroid_small_collision.tres::CircleShape2D::2089422263663351751::315558000::0::1::::<><>::
+meteorBrown_big1.png::CompressedTexture2D::9210132570404135951::315558000::1725394254::1::::<><>::
+meteorBrown_med1.png::CompressedTexture2D::8310659406252173330::315558000::1725394254::1::::<><>::
+meteorBrown_small1.png::CompressedTexture2D::1950332233179862993::315558000::1725394254::1::::<><>::
+::res://scenes/::1725485670
+alien_1.tscn::PackedScene::6663986863237317754::1725485670::0::1::::<><>::res://scenes/top_alien.gd<>uid://cwjshe7k5byvg::::res://Mini Pixel Pack 3/Enemies/Alien1.png<>uid://ctktv6colb2hc::::res://audio/Sound_Effects/saucerBig.wav<>uid://bv71c088nsli6::::res://audio/Sound_Effects/saucerSmall.mp3
+asteroid.tscn::PackedScene::6449684840562720759::1725485670::0::1::::<><>::res://scripts/asteroid.gd<>uid://d4hpsjymxg6k6::::res://resources/meteorBrown_big1.png<>uid://wy0sng3s5ymi::::res://resources/asteroid_med_collision.tres
+bullet.tscn::PackedScene::1622289840410870778::315558000::0::1::::<><>::res://scripts/bullet_P2.gd<>uid://3gcrn6u3tlg6::::res://Mini Pixel Pack 3/Projectiles/Player_charged_beam2 (16 x 16).png
+bullet_P1.tscn::PackedScene::4534859931757728508::315558000::0::1::::<><>::res://scripts/bullet_P1.gd<>uid://c4quit8fl8yl2::::res://Mini Pixel Pack 3/Projectiles/Player_charged_beam1 (16 x 16).png
+bullet_P2.tscn::PackedScene::7808579914843574166::315558000::0::1::::<><>::res://scripts/bullet_P2.gd<>uid://3gcrn6u3tlg6::::res://Mini Pixel Pack 3/Projectiles/Player_charged_beam2 (16 x 16).png
+bullet_P3.tscn::PackedScene::5665541222306077832::315558000::0::1::::<><>::res://scripts/bullet_P3.gd<>uid://pxkvs2hkagls::::res://Mini Pixel Pack 3/Projectiles/Player_charged_beam3 (16 x 16).png
+bullet_P4.tscn::PackedScene::7292470435285234628::315558000::0::1::::<><>::res://scripts/bullet_P4.gd<>uid://egthiftimumv::::res://Mini Pixel Pack 3/Projectiles/Player_charged_beam4(16 x 16).png
+Game_Manager.gd::GDScript::-1::315558000::0::1::::GameManager<>Node<>::
+game_over_screen.tscn::PackedScene::1976787194248175714::1725485670::0::1::::<><>::res://scripts/game_over_screen.gd<>uid://cxmoyx2fpl7te::::res://Mini Pixel Pack 3/UI objects/GAME_OVER (72 x 8).png<>uid://dwalf77orcx4d::::res://Mini Pixel Pack 3/Backgrounds/Space_BG (2 frames) (64 x 64).png<>uid://dxt28pkkbmnru::::res://Mini Pixel Pack 3/UI objects/pokemon_fire_red.ttf
+global_nodes.tscn::PackedScene::3809378969370121939::1725485670::0::1::::<><>::
+hud.tscn::PackedScene::6460679496008335532::1725485670::0::1::::<><>::res://scripts/hud.gd<>uid://dxt28pkkbmnru::::res://Mini Pixel Pack 3/UI objects/pokemon_fire_red.ttf
+level_2p.tscn::PackedScene::1165389152876708626::1725485670::0::1::::<><>::res://scripts/main.gd<>uid://cybuphf55tsg7::::res://scenes/hud.tscn<>uid://3ftnqdjjrmfq::::res://scenes/game_over_screen.tscn<>uid://dwalf77orcx4d::::res://Mini Pixel Pack 3/Backgrounds/Space_BG (2 frames) (64 x 64).png<>uid://bxvqu3wutpwn2::::res://scenes/player.tscn<>uid://b7gqwrbudds6::::res://scenes/player_spawn_pos_1.tscn<>uid://dkb72kwwxx07::::res://scenes/player_spawn_pos_2.tscn<>uid://cx5jmqjdd2enf::::res://scenes/asteroid.tscn<>uid://ctch1u0w53vu4::::res://audio/Music/MoveAlong.mp3<>uid://djashkhnsa7oi::::res://audio/Music/Undertale Game Over Theme.mp3<>uid://kl1xys2lb32g::::res://audio/Sound_Effects/Player_Explosion.mp3<>uid://cc2dh2r4xsxkb::::res://audio/Sound_Effects/8-bit-laser-151672.mp3<>uid://cq4v0mqb6tcal::::res://audio/Sound_Effects/8-bit-explosion-95847.mp3<>uid://c5ltmek7hpecp::::res://audio/Sound_Effects/enemy_spawn1.mp3<>uid://cfo3j8x3dejlw::::res://audio/Sound_Effects/enemy1_death.mp3
+main.tscn::PackedScene::5833144911897289106::1725485670::0::1::::<><>::res://scenes/Game_Manager.gd<>uid://qur13gdhdy3s::::res://scenes/level_2p.tscn<>uid://dmvhrb5vmj8m6::::res://scenes/pause_menu.tscn
+pause_menu.gd::GDScript::-1::315558000::0::1::::<>Control<>::
+pause_menu.tscn::PackedScene::8045335584854750435::315558000::0::1::::<><>::res://scenes/pause_menu.gd<>uid://dxt28pkkbmnru::::res://Mini Pixel Pack 3/UI objects/pokemon_fire_red.ttf
+player.tscn::PackedScene::4045124713539678037::1725485670::0::1::::<><>::res://scripts/player.gd<>uid://bkgesapc0wqns::::res://Player ship/Player_Ship_P1.png<>uid://bxkrm5nalrl86::::res://Player ship/AnimatedFlame.png<>uid://cvupmil46yq1l::::res://Player ship/shield.png
+player_spawn_pos_1.tscn::PackedScene::136642988274684743::1725485670::0::1::::<><>::
+player_spawn_pos_2.tscn::PackedScene::231329605460826278::315558000::0::1::::<><>::
+top_alien.gd::GDScript::-1::315558000::0::1::::Enemy<>Area2D<>::
+ui_life_P1.tscn::PackedScene::3554193462242924268::1725485670::0::1::::<><>::uid://bkgesapc0wqns::::res://Player ship/Player_Ship_P1.png
+ui_life_P2.tscn::PackedScene::6282749384657402153::315558000::0::1::::<><>::uid://cu84ljteq4bkq::::res://Player ship/Player_Ship_P2.png
+ui_life_P3.tscn::PackedScene::5539692756160813119::315558000::0::1::::<><>::uid://d21s8qea5djun::::res://Player ship/Player_Ship_P3.png
+ui_life_P4.tscn::PackedScene::2948845862111010582::315558000::0::1::::<><>::uid://yr188ksyp8h4::::res://Player ship/Player_Ship_P4.png
+::res://scripts/::1725485344
+asteroid.gd::GDScript::-1::315558000::0::1::::Asteroid<>Area2D<>::
+bullet_P1.gd::GDScript::-1::315558000::0::1::::<>Area2D<>::
+bullet_P2.gd::GDScript::-1::315558000::0::1::::<>Area2D<>::
+bullet_P3.gd::GDScript::-1::315558000::0::1::::<>Area2D<>::
+bullet_P4.gd::GDScript::-1::315558000::0::1::::<>Area2D<>::
+camera_2d_1.gd::GDScript::-1::315558000::0::1::::<>Camera2D<>::
+camera_2d_2.gd::GDScript::-1::315558000::0::1::::<>Camera2D<>::
+enemy.gd::GDScript::-1::315558000::0::1::::<>Area2D<>::
+game_over_screen.gd::GDScript::-1::1725485344::0::1::::<>Control<>::
+Global.gd::GDScript::-1::1725485212::0::1::::<>Node<>::
+hud.gd::GDScript::-1::1725485344::0::1::::<>Control<>::
+main.gd::GDScript::-1::1725485212::0::1::::<>Node2D<>::
+player.gd::GDScript::-1::315558000::0::1::::Player<>CharacterBody2D<>::
+split_camera.gd::GDScript::-1::315558000::0::1::::<>Node<>::
+timer.gd::GDScript::-1::315558000::0::1::::<>Label<>::

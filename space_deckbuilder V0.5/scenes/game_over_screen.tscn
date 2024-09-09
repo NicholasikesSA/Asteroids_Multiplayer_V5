@@ -1,0 +1,54 @@
+[gd_scene load_steps=6 format=3 uid="uid://3ftnqdjjrmfq"]
+
+[ext_resource type="Script" path="res://scripts/game_over_screen.gd" id="1_5223f"]
+[ext_resource type="Texture2D" uid="uid://cxmoyx2fpl7te" path="res://Mini Pixel Pack 3/UI objects/GAME_OVER (72 x 8).png" id="1_o3qoe"]
+[ext_resource type="Texture2D" uid="uid://dwalf77orcx4d" path="res://Mini Pixel Pack 3/Backgrounds/Space_BG (2 frames) (64 x 64).png" id="2_s8u2j"]
+[ext_resource type="FontFile" uid="uid://dxt28pkkbmnru" path="res://Mini Pixel Pack 3/UI objects/pokemon_fire_red.ttf" id="2_tb2oq"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_13vyn"]
+font = ExtResource("2_tb2oq")
+font_size = 64
+
+[node name="GameOverScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5223f")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+scale = Vector2(10, 11.25)
+texture = ExtResource("2_s8u2j")
+
+[node name="GameOver" type="Node2D" parent="."]
+position = Vector2(-4, 0)
+
+[node name="Restart" type="Button" parent="."]
+layout_mode = 0
+offset_left = 520.0
+offset_top = 455.0
+offset_right = 760.0
+offset_bottom = 515.0
+theme_override_fonts/font = ExtResource("2_tb2oq")
+theme_override_font_sizes/font_size = 58
+text = "TRY AGAIN"
+
+[node name="GameOver(72X8)" type="Sprite2D" parent="."]
+position = Vector2(649, 220)
+scale = Vector2(10, 10)
+texture = ExtResource("1_o3qoe")
+
+[node name="WhoWon" type="Label" parent="."]
+layout_mode = 0
+offset_left = 292.0
+offset_top = 291.0
+offset_right = 1030.0
+offset_bottom = 379.0
+text = "broken"
+label_settings = SubResource("LabelSettings_13vyn")
+horizontal_alignment = 1
+
+[connection signal="pressed" from="Restart" to="." method="_on_restart_pressed"]

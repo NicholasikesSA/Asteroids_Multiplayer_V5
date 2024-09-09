@@ -1,0 +1,13 @@
+res://scenes/main.tscn
+res://resources/asteroid_big_collision.tres
+res://resources/asteroid_med_collision.tres
+res://scenes/ui_life_P1.tscn
+res://scenes/player_spawn_pos_1.tscn
+res://scenes/player.tscn
+res://scenes/asteroid.tscn
+res://scenes/level_2p.tscn
+res://scenes/hud.tscn
+res://scenes/game_over_screen.tscn
+res://scenes/global_nodes.tscn
+res://scenes/alien_1.tscn
+res://resources/asteroid_small_collision.tres

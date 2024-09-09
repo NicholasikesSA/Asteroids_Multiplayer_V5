@@ -1,0 +1,167 @@
+[gd_scene load_steps=19 format=3 uid="uid://qur13gdhdy3s"]
+
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_icgql"]
+[ext_resource type="PackedScene" uid="uid://cybuphf55tsg7" path="res://scenes/hud.tscn" id="2_w41wi"]
+[ext_resource type="PackedScene" uid="uid://3ftnqdjjrmfq" path="res://scenes/game_over_screen.tscn" id="3_7r8vh"]
+[ext_resource type="Texture2D" uid="uid://dwalf77orcx4d" path="res://Mini Pixel Pack 3/Backgrounds/Space_BG (2 frames) (64 x 64).png" id="4_1cxlh"]
+[ext_resource type="PackedScene" uid="uid://bxvqu3wutpwn2" path="res://scenes/player.tscn" id="5_w868l"]
+[ext_resource type="PackedScene" uid="uid://b7gqwrbudds6" path="res://scenes/player_spawn_pos_1.tscn" id="6_8477j"]
+[ext_resource type="PackedScene" uid="uid://dkb72kwwxx07" path="res://scenes/player_spawn_pos_2.tscn" id="7_rnn3n"]
+[ext_resource type="PackedScene" uid="uid://cx5jmqjdd2enf" path="res://scenes/asteroid.tscn" id="8_qo2av"]
+[ext_resource type="AudioStream" uid="uid://ctch1u0w53vu4" path="res://audio/Music/MoveAlong.mp3" id="9_11ce2"]
+[ext_resource type="AudioStream" uid="uid://djashkhnsa7oi" path="res://audio/Music/Undertale Game Over Theme.mp3" id="10_hcmxy"]
+[ext_resource type="AudioStream" uid="uid://kl1xys2lb32g" path="res://audio/Sound_Effects/Player_Explosion.mp3" id="11_w7c45"]
+[ext_resource type="AudioStream" uid="uid://cc2dh2r4xsxkb" path="res://audio/Sound_Effects/8-bit-laser-151672.mp3" id="12_o81g1"]
+[ext_resource type="AudioStream" uid="uid://cq4v0mqb6tcal" path="res://audio/Sound_Effects/8-bit-explosion-95847.mp3" id="13_s0joj"]
+[ext_resource type="AudioStream" uid="uid://c5ltmek7hpecp" path="res://audio/Sound_Effects/enemy_spawn1.mp3" id="14_orjtf"]
+[ext_resource type="AudioStream" uid="uid://cfo3j8x3dejlw" path="res://audio/Sound_Effects/enemy1_death.mp3" id="15_t7q0m"]
+
+[sub_resource type="Animation" id="Animation_6g8gu"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Rect2(0, 0, 240, 320)]
+}
+
+[sub_resource type="Animation" id="Animation_s1rt5"]
+resource_name = "scroll"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Rect2(0, 0, 240, 320), Rect2(0, -64, 240, 320)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_lce0f"]
+_data = {
+"RESET": SubResource("Animation_6g8gu"),
+"scroll": SubResource("Animation_s1rt5")
+}
+
+[node name="Level_2P" type="Node2D"]
+process_mode = 1
+script = ExtResource("1_icgql")
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="HUD" parent="UI" instance=ExtResource("2_w41wi")]
+
+[node name="GameOverScreen" parent="UI" instance=ExtResource("3_7r8vh")]
+visible = false
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_repeat = 2
+scale = Vector2(5.33, 5.33)
+texture = ExtResource("4_1cxlh")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 240, 320)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_lce0f")
+}
+autoplay = "scroll"
+speed_scale = 0.5
+
+[node name="Players" type="Node" parent="."]
+
+[node name="Player1" parent="Players" instance=ExtResource("5_w868l")]
+position = Vector2(620, 360)
+collision_layer = 11
+
+[node name="Player2" parent="Players" instance=ExtResource("5_w868l")]
+position = Vector2(660, 360)
+player_index = 2
+
+[node name="Player_Spawns" type="Node" parent="."]
+
+[node name="PlayerSpawnPos1" parent="Player_Spawns" instance=ExtResource("6_8477j")]
+
+[node name="PlayerSpawnPos2" parent="Player_Spawns" instance=ExtResource("7_rnn3n")]
+
+[node name="Asteroids" type="Node" parent="."]
+
+[node name="Asteroid" parent="Asteroids" instance=ExtResource("8_qo2av")]
+position = Vector2(216, 176)
+
+[node name="Asteroid2" parent="Asteroids" instance=ExtResource("8_qo2av")]
+position = Vector2(68, 648)
+
+[node name="Asteroid3" parent="Asteroids" instance=ExtResource("8_qo2av")]
+position = Vector2(1147, 118)
+
+[node name="Asteroid4" parent="Asteroids" instance=ExtResource("8_qo2av")]
+position = Vector2(1013, 455)
+
+[node name="Asteroid5" parent="Asteroids" instance=ExtResource("8_qo2av")]
+position = Vector2(502, 134)
+
+[node name="bullet_from_who" type="Node" parent="."]
+
+[node name="bullets_p1" type="Node2D" parent="bullet_from_who"]
+
+[node name="bullets_p2" type="Node2D" parent="bullet_from_who"]
+
+[node name="bullets_p3" type="Node2D" parent="bullet_from_who"]
+
+[node name="bullets_p4" type="Node2D" parent="bullet_from_who"]
+
+[node name="Music" type="Node" parent="."]
+
+[node name="Track1" type="AudioStreamPlayer" parent="Music"]
+stream = ExtResource("9_11ce2")
+mix_target = 1
+
+[node name="GameOver1" type="AudioStreamPlayer" parent="Music"]
+stream = ExtResource("10_hcmxy")
+volume_db = -10.0
+mix_target = 1
+
+[node name="Sound_Effects" type="Node" parent="."]
+
+[node name="PlayerDeath" type="AudioStreamPlayer" parent="Sound_Effects"]
+stream = ExtResource("11_w7c45")
+volume_db = -10.0
+
+[node name="LaserSound" type="AudioStreamPlayer" parent="Sound_Effects"]
+stream = ExtResource("12_o81g1")
+volume_db = -20.0
+pitch_scale = 1.5
+mix_target = 1
+
+[node name="AsteroidDestroyed" type="AudioStreamPlayer" parent="Sound_Effects"]
+stream = ExtResource("13_s0joj")
+volume_db = -20.0
+
+[node name="EnemySpawn1" type="AudioStreamPlayer" parent="Sound_Effects"]
+stream = ExtResource("14_orjtf")
+volume_db = -20.0
+
+[node name="AlienTopDeath" type="AudioStreamPlayer" parent="Sound_Effects"]
+stream = ExtResource("15_t7q0m")
+volume_db = -20.0
+pitch_scale = 0.2
+mix_target = 1
+
+[node name="Enemies" type="Node" parent="."]
+
+[connection signal="shield_on_cooldown" from="Players/Player1" to="UI/HUD" method="_on_player_1_shield_on_cooldown"]
+[connection signal="shield_start" from="Players/Player1" to="UI/HUD" method="_on_player_1_shield_start"]
+[connection signal="finished" from="Sound_Effects/EnemySpawn1" to="." method="_on_enemy_spawn_1_finished"]
